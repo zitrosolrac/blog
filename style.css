@@ -1,0 +1,11 @@
+* {
+    font-family: fantasy;
+    color: rgba(200, 114, 0, 0.733);
+}
+
+#title {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+}
