@@ -1,11 +1,28 @@
 * {
     font-family: fantasy;
     color: rgba(200, 114, 0, 0.733);
+    /* margin: 0;
+    padding: 0; */
 }
 
-#title {
+#blog {
+    /* width: 825px; */
+    /* margin: 50px auto; using shorthand to give top and bottom zero and 
+    left and right auto
+    */
+    border: 2px solid black;
+}
+
+#blogTitle {
     text-align: center;
-    margin: 0;
-    padding: 0;
-    border-bottom: 1px solid black;
+    font-size: 30px;
+    font-family: fantasy;
+    background-color: greenyellow;
+}
+
+#image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* used to create centered image */
 }
