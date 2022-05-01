@@ -1,6 +1,6 @@
 * {
     font-family: fantasy;
-    color: rgba(200, 114, 0, 0.733);
+    color: #89CFF0;
     text-align: center;
     /* margin: 0;
     padding: 0; */
@@ -17,7 +17,9 @@
 #blogTitle {
     font-size: 30px;
     font-family: fantasy;
-    background-color: greenyellow;
+    background-color: #89CFF0;
+    margin-bottom: 0;
+    color: white;
 }
 
 #image {
@@ -29,4 +31,19 @@
 
 #indent{
     text-indent: 30px;
+}
+
+.parent {
+    border: 4px #89CFF0 dotted;
+    display: inline-block;
+}
+
+.box {
+    display: inline-block;
+    background: #89CFF0;
+    text-align: left;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;;
 }
