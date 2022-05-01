@@ -26,3 +26,7 @@
     margin-right: auto;
     /* used to create centered image */
 }
+
+#indent{
+    text-indent: 30px;
+}
