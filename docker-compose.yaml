@@ -1,12 +1,12 @@
-# # HOST_UID=1000 docker-compose up --build
-version: '2.4'
+#docker-compose up --build
+version: "2.4"
 services:
-  # example how to build
-  builder:
-    # build: .
-    image: datajoint/miniconda3:4.10.3-py3.9-debian
-    user: ${HOST_UID}:anaconda
-    volumes:
-      - ./src:/main
-      - ./pip_requirements.txt:/tmp/pip_requirements.txt
-      - ./apt_requirements.txt:/tmp/apt_requirements.txt
+  app:
+    build:
+      context: .
+      args:
+        - CONTENT_DIR=./
+    # image: registry.vathes.com/datajoint/${SITE}:${VERSION}
+    platform: linux/amd64
+    ports:
+      - "80:80"
