@@ -10,3 +10,8 @@ services:
     platform: linux/amd64
     ports:
       - "80:80"
+    command: 
+      - bash
+      - -c
+      - | 
+        tail -f /dev/null
