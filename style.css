@@ -2,8 +2,8 @@
     font-family: fantasy;
     color: #89CFF0;
     text-align: center;
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
+    padding: 0;
 }
 
 #blog {
@@ -11,7 +11,7 @@
     /* margin: 50px auto; using shorthand to give top and bottom zero and 
     left and right auto
     */
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 #blogTitle {
@@ -56,14 +56,12 @@ body{
 }
 .container{
     display: block;
-    height: 90vh;
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: 25% 30% 20% 25%;
     grid-template-areas:
     "header header header"
     ". inputs ."
-    ". outputs ."
-    "footer footer footer";
+    ". outputs .";
 }
 #header{
     grid-area: header;
@@ -124,24 +122,22 @@ button:hover{
 }
 #price{
     margin-top: 1rem;
-    border: 1px solid rgb(21, 236, 243);
-    width: max-content;
+    width: auto;
     z-index: 1;
     display: none;
     font-size: 1.2rem;
-    background: rgb(215,215,215);
     color: black;
-
+    border-radius: 2em;
+    /* width: 10vh; */
 }
 select{
     background: transparent;
-    width: 5rem;
     border: 2px solid #9eeaf0;
     color: black;
     border-radius: 2em;
     font-size: 1em;
     height: 2em;
-    width: 5em;
+    width: 9em;
 }
 select:hover{
     background: #9eeaf0;
