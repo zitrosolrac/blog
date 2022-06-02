@@ -55,13 +55,18 @@ body{
     background-size: cover;
 }
 .container{
-    display: block;
+    display: grid;
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: 25% 30% 20% 25%;
     grid-template-areas:
     "header header header"
     ". inputs ."
     ". outputs .";
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns: 25% 25%;
 }
 #header{
     grid-area: header;
@@ -145,4 +150,18 @@ select:hover{
 option{
 
     color: black;
+}
+
+#grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+
+#areaA {
+    background-color: lime;
+}
+  
+#areaB {
+    background-color: yellow;
 }
