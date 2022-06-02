@@ -151,3 +151,17 @@ option{
 
     color: black;
 }
+
+#grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+
+#areaA {
+    background-color: lime;
+}
+  
+#areaB {
+    background-color: yellow;
+}
